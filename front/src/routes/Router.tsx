@@ -1,11 +1,12 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import Search from "../pages/Search";
-import Search2 from "../pages/Search2";
+import Publication from "../pages/Publication";
 import About from "../pages/About";
-import Contact from "../pages/Contact";
-import Products from "../pages/Products";
-import UserRules from "../pages/UserRules";
+import Database from "../pages/Database";
+import Research from "../pages/Research";
+import Life from "../pages/Life";
+import People from "../pages/People";
+import Services from "../pages/Services";
 
 
 export const Router = () => {
@@ -13,12 +14,13 @@ export const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route element = { <Home /> } path = "/" />
-                <Route element = { <Search /> } path = "/Search" />
+                <Route element = { <Publication /> } path = "/Publication" />
                 <Route element = { <About /> } path = "/About" />
-                <Route element = { <Contact /> } path = "/Contact" />
-                <Route element = { <Products /> } path = "/Products" />
-                <Route element = { <UserRules /> } path = "/UserRules" />
-                <Route element = { <Search2 /> } path = "/Search2" />
+                <Route element = { <Database /> } path = "/Database" />
+                <Route element = { <Research /> } path = "/Research" />
+                <Route element = { <Life /> } path = "/Life" />
+                <Route element = { <People /> } path = "/People" />
+                <Route element = { <Services /> } path = "/Services" />
             </Routes>
         </BrowserRouter>
     );

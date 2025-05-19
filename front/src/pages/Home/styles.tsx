@@ -9,9 +9,10 @@ export const StyledLink = styled(Link)`
 export const Container = styled.div`
   width: 100%;
   min-height: 100vh; /* Ensure the container takes at least the full viewport height */
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: rgba(238, 238, 238, 0.11);
   position: relative;
@@ -24,16 +25,18 @@ export const Content = styled.main`
   max-width: 1120px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
   color: #000;
-  font-size: 60px;
+  font-family: 'Lato';
+  font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  width: 531px;
   margin-bottom: 0px;
+  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 40px;
@@ -51,7 +54,8 @@ export const Main = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: space-between; /* Align children with space between */
-  margin: 2rem;
+  margin: 2rem 0 0 0;
+  padding: 0;
   flex-grow: 1; /* Allow Main to grow and fill the available space */
   min-height: calc(100vh - 4rem); /* Ensure Main takes at least the full viewport height minus margins */
 
@@ -63,12 +67,12 @@ export const Main = styled.main`
 export const Upper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  gap: 20rem;
+  justify-content: center;
+  gap: 12rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
     align-items: center;
   }
 `;
@@ -93,8 +97,9 @@ export const Bottom = styled.div`
 export const TextGroup = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  align-items: center;
   gap: 10px;
+  
 
   @media (max-width: 768px) {
     align-items: center;
@@ -108,7 +113,6 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 28px; 
-  width: 498px;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -217,3 +221,6 @@ export const Southwest = styled.p`
   margin-top: 10rem; /* Espaço acima do texto */
   width: 100%; /* Garante que o texto ocupe a largura total */
 `;
+
+export const Introduction = styled.div`
+`

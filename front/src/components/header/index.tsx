@@ -1,5 +1,5 @@
 import { HeaderContainer, Logo, Nav, NavLink, StyledLink } from './styles';
-import LogoHeader from '../../assets/logo.png';
+import LogoHeader from '../../assets/logo2.png';
 import { motion } from 'framer-motion';
 
 export default function Header() {
@@ -23,7 +23,7 @@ export default function Header() {
                 as={motion.nav}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 0.5 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
             >
                 <NavLink
                     as={motion.a}
@@ -40,8 +40,8 @@ export default function Header() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <StyledLink to="/Products">
-                        Serviços
+                    <StyledLink to="/Research">
+                        Pesquisa
                     </StyledLink>
                 </NavLink>
 
@@ -50,28 +50,48 @@ export default function Header() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <StyledLink to="/UserRules">
-                        Regras de Uso
+                    <StyledLink to="/Publication">
+                        Publicações
                     </StyledLink>
                 </NavLink>
                 
                 <NavLink
                     as={motion.a}
-                    href="https://modmolqsar.weebly.com/"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    Blog
+                    <StyledLink to="/People">
+                        Equipe
+                    </StyledLink>
+                </NavLink>
+
+                <NavLink
+                    as={motion.a}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <StyledLink to="/Life">
+                        Life of ModMol
+                    </StyledLink>
+                </NavLink>
+
+                <NavLink
+                    as={motion.a}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <StyledLink to="/Services">
+                        Serviços
+                    </StyledLink>
                 </NavLink>
                 
                 <NavLink
                     as={motion.a}
-                    style={{ border: '1px solid', borderRadius: '15px', padding: '10px 15px' }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <StyledLink to="/Contact">
-                        Faça-nos perguntas
+                    <StyledLink to="/Database">
+                        Database
                     </StyledLink>
                 </NavLink>
             </Nav>

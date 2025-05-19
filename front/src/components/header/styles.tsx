@@ -8,13 +8,13 @@ export const StyledLink = styled(Link)`
 `;
 
 export const HeaderContainer = styled.header`
-    font-family: 'Space Grotesk';
+    font-family: 'Lato';
     display: flex; 
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #eeeeee;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #0694A1;
+    box-shadow: 0 2px 4px rgba(37, 37, 37, 0.1);
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -44,12 +44,12 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(motion.a)`
     text-decoration: none;
-    color: #333;
+    color: #F3F3F3;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
     &:hover {
-        color: #0088cc;
+        color:#000000;
     }
 
     @media (max-width: 768px) {
