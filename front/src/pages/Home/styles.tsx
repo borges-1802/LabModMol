@@ -19,7 +19,7 @@ export const Container = styled.div`
   z-index: 1; /* Ensure content is above the footer */
 `;
 
-export const Content = styled.main`
+export const Content = styled.div`
   flex: 1;
   width: 100%;
   max-width: 1120px;
@@ -30,13 +30,14 @@ export const Content = styled.main`
 
 export const Title = styled.h1`
   color: #000;
-  font-family: 'Lato';
+  font-family: 'Poppins';
   font-size: 48px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   margin-bottom: 0px;
   text-align: center;
+  max-width: 1080px;
 
   @media (max-width: 768px) {
     font-size: 40px;
@@ -54,7 +55,7 @@ export const Main = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: space-between; /* Align children with space between */
-  margin: 2rem 0 0 0;
+  margin: 0rem 0 0 0;
   padding: 0;
   flex-grow: 1; /* Allow Main to grow and fill the available space */
   min-height: calc(100vh - 4rem); /* Ensure Main takes at least the full viewport height minus margins */
@@ -97,7 +98,6 @@ export const Bottom = styled.div`
 export const TextGroup = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10px;
   
 
@@ -112,7 +112,8 @@ export const Text = styled.p`
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; 
+  line-height: 28px;
+  max-width: 760px;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -224,3 +225,53 @@ export const Southwest = styled.p`
 
 export const Introduction = styled.div`
 `
+
+export const Image2 = styled.img`
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+`;
+
+export const ImageCaption = styled.p`
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin: 1rem 0;
+  font-style: italic;
+`;
+
+export const ContainerTopo = styled.div`
+background-color: #333;
+padding: 0 2.5rem;
+height: 25rem;
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+`;
+
+export const Container2 = styled.div`
+  background-color: #FFFFFF;
+  height: 25rem;
+  display: flex;
+  width: 100%;
+  padding: 0 2.5rem; /* Adicione padding para não colar nas bordas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const ButtonContainer = styled.div`
+    display: flex;
+    gap: 15px; 
+    flex-wrap: wrap; /* Permitir que os botões quebrem para a próxima linha em telas pequenas */
+    justify-content: center; /* Centralizar os botões */
+    flex-direction: column;
+`;
+
+export const TextButton = styled.div`
+    
+`;
