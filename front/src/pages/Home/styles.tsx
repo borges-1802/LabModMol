@@ -8,15 +8,17 @@ export const StyledLink = styled(Link)`
 
 export const Container = styled.div`
   width: 100%;
-  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
-  margin: 0 auto;
+  min-height: 100vh;
+  margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   background-color: rgba(238, 238, 238, 0.11);
   position: relative;
-  z-index: 1; /* Ensure content is above the footer */
+  z-index: 1;
+  box-sizing: border-box;
+  overflow-x: hidden;
 `;
 
 export const Content = styled.div`
@@ -48,21 +50,9 @@ export const Title = styled.h1`
 
 export const Section = styled.section`
   margin-top: 2rem;
-`;
-
-export const Main = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between; /* Align children with space between */
-  margin: 0rem 0 0 0;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0;
-  flex-grow: 1; /* Allow Main to grow and fill the available space */
-  min-height: calc(100vh - 4rem); /* Ensure Main takes at least the full viewport height minus margins */
-
-  @media (max-width: 768px) {
-    margin: 1rem;
-  }
 `;
 
 export const Upper = styled.div`
@@ -99,7 +89,8 @@ export const TextGroup = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
+  width: 100%;
+  max-width: 1080px;
 
   @media (max-width: 768px) {
     align-items: center;
@@ -113,6 +104,7 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  width: 100%;
   max-width: 760px;
 
   @media (max-width: 768px) {
@@ -244,24 +236,27 @@ export const ImageCaption = styled.p`
 `;
 
 export const ContainerTopo = styled.div`
-background-color: #333;
-padding: 0 2.5rem;
-height: 25rem;
-display: flex;
-width: 100%;
-justify-content: center;
-align-items: center;
+  background-color: #333;
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 `;
 
 export const Container2 = styled.div`
-  background-color: #FFFFFF;
-  height: 25rem;
-  display: flex;
   width: 100%;
-  padding: 0 2.5rem; /* Adicione padding para não colar nas bordas */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
 `;
 
 export const ButtonContainer = styled.div`
@@ -274,4 +269,66 @@ export const ButtonContainer = styled.div`
 
 export const TextButton = styled.div`
     
+`;
+
+export const SectionContent = styled.div<{ reverse?: boolean }>`
+  display: flex;
+  flex-direction: ${props => props.reverse ? 'row-reverse' : 'row'};
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem;
+  margin: 0;
+  box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 1rem;
+  }
+`;
+
+export const SectionText = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 50%;
+  box-sizing: border-box;
+`;
+
+export const SectionImage = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
+
+export const SectionTitle = styled.h2`
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+    text-align: center;
+  }
 `;
