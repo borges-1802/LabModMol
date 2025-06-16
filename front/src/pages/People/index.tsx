@@ -1,66 +1,171 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import MemberCard from '../../components/membercard';
-import { Container, Description, Title, MembersContainer } from './styles';
+import { Container, Title, Description, TeamGrid, SectionTitle } from './styles';
+import TeamMemberCard from '../../components/team/TeamMemberCard';
+import StudentCard from '../../components/studentCard';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-
-import Alessandra from '../../assets/alessandra2.png';
-import Rangel from '../../assets/rangel2.png';
-import Thiago from '../../assets/thiago2.png';
-import AnaSodero from '../../assets/ana2.png';
-import BarbaraVieira from '../../assets/barbara2.png';
-
-const members = [
-  { name: 'Carlos Rangel Rodrigues', role: 'Coordenador', imgSrc: Rangel, scholarLink: "", lattesLink: " http://lattes.cnpq.br/4265523459861860" },
-  { name: 'Alessandra Mendonça Teles de Souza', role: 'Vice-Coordenadora', imgSrc: Alessandra, scholarLink: "https://scholar.google.com.br/citations?hl=pt-BR&user=wnVM0gIAAAAJ", lattesLink: "http://lattes.cnpq.br/7047409069633400" },
-  { name: 'Thiago ', role: 'Aluno de Doutorado', imgSrc: Thiago },
-  { name: 'Ana Carolina Rennó Sodero', role: 'Professora Adjunta', imgSrc: AnaSodero, lattesLink: "http://lattes.cnpq.br/2594571837199451"},
-  { name: 'Bárbara de Azevedo Abrahim Vieira', role: 'Professora Adjunta', imgSrc: BarbaraVieira, lattesLink: "http://lattes.cnpq.br/5694594751124057"}
-
-
-  // ADICIONAR MEMBROS AQUI
-];
+import alessandra from '../../assets/alessandra2.png';
 
 const People: React.FC = () => {
+  const teamMembers = {
+    professores: [
+      {
+        id: 1,
+        name: "Carlos Rangel Rodrigues",
+        role: "Coordenador",
+        photo: "/path-to-photo.jpg",
+        description: "Professor e coordenador do Laboratório de Modelagem Molecular e QSAR. Especialista em modelagem molecular, QSAR e desenvolvimento de fármacos.",
+        lattes: "http://lattes.cnpq.br/4265523459861860",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      },
+      {
+        id: 2,
+        name: "Alessandra Mendonça Teles de Souza",
+        role: "Vice-Coordenadora",
+        photo: alessandra,
+        description: "Professora e vice-coordenadora do Laboratório. Especialista em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "http://lattes.cnpq.br/7047409069633400",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      }
+    ],
+    doutorado: [
+      {
+        id: 3,
+        name: "Nome do Doutorando 1",
+        role: "Doutorando",
+        photo: "/path-to-photo.jpg",
+        description: "Doutorando em Química com foco em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "https://lattes.cnpq.br/",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      },
+      {
+        id: 4,
+        name: "Nome do Doutorando 2",
+        role: "Doutorando",
+        photo: "/path-to-photo.jpg",
+        description: "Doutorando em Química com foco em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "https://lattes.cnpq.br/",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      },
+      {
+        id: 5,
+        name: "Nome do Doutorando 3",
+        role: "Doutorando",
+        photo: "/path-to-photo.jpg",
+        description: "Doutorando em Química com foco em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "https://lattes.cnpq.br/",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      }
+    ],
+    mestrado: [
+      {
+        id: 6,
+        name: "Nome do Mestrando 1",
+        role: "Mestrando",
+        photo: "/path-to-photo.jpg",
+        description: "Mestrando em Química com foco em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "https://lattes.cnpq.br/",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      },
+      {
+        id: 7,
+        name: "Nome do Mestrando 2",
+        role: "Mestrando",
+        photo: "/path-to-photo.jpg",
+        description: "Mestrando em Química com foco em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "https://lattes.cnpq.br/",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      },
+      {
+        id: 8,
+        name: "Nome do Mestrando 3",
+        role: "Mestrando",
+        photo: "/path-to-photo.jpg",
+        description: "Mestrando em Química com foco em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "https://lattes.cnpq.br/",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      }
+    ],
+    iniciacao: [
+      {
+        id: 9,
+        name: "Nome do Aluno 1",
+        role: "Aluno de Iniciação Científica",
+        photo: "/path-to-photo.jpg",
+        description: "Aluno de Iniciação Científica com interesse em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "https://lattes.cnpq.br/",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      },
+      {
+        id: 10,
+        name: "Nome do Aluno 2",
+        role: "Aluno de Iniciação Científica",
+        photo: "/path-to-photo.jpg",
+        description: "Aluno de Iniciação Científica com interesse em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "https://lattes.cnpq.br/",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      },
+      {
+        id: 11,
+        name: "Nome do Aluno 3",
+        role: "Aluno de Iniciação Científica",
+        photo: "/path-to-photo.jpg",
+        description: "Aluno de Iniciação Científica com interesse em modelagem molecular e desenvolvimento de fármacos.",
+        lattes: "https://lattes.cnpq.br/",
+        linkedin: "https://linkedin.com/in/",
+        email: "email@example.com"
+      }
+    ]
+  };
+
   return (
     <>
       <Header />
-      <Container as={motion.div} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        <Title
-          as={motion.h1}
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Equipe
-        </Title>
-        <Description
-          as={motion.p}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          A equipe do Laboratório de Modelagem Molecular e QSAR é composta pelos coordenadores, professores colaboradores e o grupo de pesquisa é constituído por pós-doutorandos, alunos de doutorado, mestrado e iniciação científica, todos com suporte financeiro proveniente de instituições como Capes, CNPq e FAPERJ.
+      <Container>
+        <Title>Equipe</Title>
+        <Description>
+          Nossa equipe é composta por pesquisadores dedicados e profissionais qualificados, 
+          trabalhando em conjunto para avançar o conhecimento em modelagem molecular e 
+          desenvolvimento de fármacos. Conheça nossos membros e suas áreas de especialização.
         </Description>
-        <MembersContainer>
-          {members.map(member => (
-            <MemberCard
-              key={member.name}
-              name={member.name}
-              role={member.role}
-              imgSrc={member.imgSrc}
-              scholarLink={member.scholarLink}
-              lattesLink={member.lattesLink}
-              as={motion.div}
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            />
+
+        <SectionTitle>Professores</SectionTitle>
+        <TeamGrid>
+          {teamMembers.professores.map((member) => (
+            <TeamMemberCard key={member.id} {...member} />
           ))}
-        </MembersContainer>
+        </TeamGrid>
+
+        <SectionTitle>Doutorado</SectionTitle>
+        <TeamGrid isStudent>
+          {teamMembers.doutorado.map((member) => (
+            <StudentCard key={member.id} {...member} />
+          ))}
+        </TeamGrid>
+
+        <SectionTitle>Mestrado</SectionTitle>
+        <TeamGrid isStudent>
+          {teamMembers.mestrado.map((member) => (
+            <StudentCard key={member.id} {...member} />
+          ))}
+        </TeamGrid>
+
+        <SectionTitle>Iniciação Científica</SectionTitle>
+        <TeamGrid isStudent>
+          {teamMembers.iniciacao.map((member) => (
+            <StudentCard key={member.id} {...member} />
+          ))}
+        </TeamGrid>
       </Container>
       <Footer />
     </>

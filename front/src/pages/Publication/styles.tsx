@@ -1,30 +1,84 @@
 import styled from 'styled-components';
 
+// Publication Page Styles
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh; /* Usar min-height para garantir que o conteúdo não fique cortado */
-    padding: 20px; /* Aumentar o padding para melhorar a responsividade */
-    box-sizing: border-box;
-    background-color: rgba(238, 238, 238, 0.11);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
 `;
 
 export const Title = styled.h1`
-    font-size: 2em; // Tamanho reduzido para telas menores
-    color: #191A23; 
-    margin-bottom: 15px;
-    text-align: center; /* Centralizar o título */
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
 `;
 
 export const Description = styled.p`
-    font-size: 1em; // Tamanho reduzido para telas menores
+    font-size: 1.2rem;
     color: #666;
-    margin-bottom: 30px; 
     text-align: center;
-    max-width: 500px; 
-    padding: 0 20px; /* Adicionar padding para melhorar a leitura em telas pequenas */
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+`;
+
+export const YearSection = styled.div`
+    margin-bottom: 60px;
+`;
+
+export const YearTitle = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0694A1;
+    font-family: 'Poppins', sans-serif;
+`;
+
+export const YearLine = styled.div`
+    flex: 1;
+    height: 3px;
+    background: #0694A1;
+    margin-left: 20px;
+`;
+
+export const PublicationsGrid = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 20px;
+`;
+
+// PublicationCard Styles
+export const CardContainer = styled.div`
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 16px;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+`;
+
+export const CardTitle = styled.h3`
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 600;
+`;
+
+export const CardDescription = styled.p`
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
 `;
 
 export const ButtonContainer = styled.div`
