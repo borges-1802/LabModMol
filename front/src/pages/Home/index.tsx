@@ -75,7 +75,7 @@ export default function Home() {
               <ImageCaption>IMAGEM SECUNDÁRIA</ImageCaption>
             </SectionImage>
             <SectionText>
-              <SectionTitle>Título da Seção</SectionTitle>
+              <SectionTitle>Banco de Dados</SectionTitle>
               <Text>
                 Descrição da seção...
               </Text>

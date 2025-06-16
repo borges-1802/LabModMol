@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Button from '../../components/button';
-import { Container, Title, Description, ButtonContainer, Bottom, Image, ImageGroup, SupportText } from './styles';
+import { Container, Title, Description, ButtonContainer, Bottom, Image, ImageGroup, SupportText, Section, SectionTitle, SectionContent } from './styles';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import Farmacia from '../../assets/farmacia_logo.png';
@@ -28,10 +28,32 @@ const Research: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    Bem-vindo! Apresentar as linhas de pesquisa e os agradecimentos às agências.
+                    Temos a atuação em algumas frentes de pesquisa:
                 </Description>
+
+                <Section>
+                    <SectionTitle>Nome 1</SectionTitle>
+                    <SectionContent>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </SectionContent>
+                </Section>
+
+                <Section>
+                    <SectionTitle>Nome 2</SectionTitle>
+                    <SectionContent>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </SectionContent>
+                </Section>
+
+                <Section>
+                    <SectionTitle>Nome 3</SectionTitle>
+                    <SectionContent>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </SectionContent>
+                </Section>
+
                 <ButtonContainer>
-                    <Button>Em breve</Button>
+                    <Button href="/">Voltar para Home</Button>
                 </ButtonContainer>
             </Container>
             <Footer />
