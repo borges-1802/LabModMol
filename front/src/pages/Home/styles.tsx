@@ -33,23 +33,23 @@ export const Content = styled.div`
 export const Title = styled.h1`
   color: #000;
   font-family: 'Poppins';
-  font-size: 48px;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-bottom: 0px;
+  margin-bottom: 0.5rem;
   text-align: center;
-  max-width: 1080px;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 
-  @media (max-width: 768px) {
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
   }
 `;
 
 export const Section = styled.section`
-  margin-top: 2rem;
+  margin-top: 0;
   width: 100%;
   box-sizing: border-box;
   padding: 0;
@@ -90,26 +90,23 @@ export const TextGroup = styled.div`
   flex-direction: column;
   gap: 10px;
   width: 100%;
-  max-width: 1080px;
-
-  @media (max-width: 768px) {
-    align-items: center;
-    text-align: center;
-  }
+  align-items: center;
+  text-align: center;
 `;
 
 export const Text = styled.p`
   color: #000;
-  font-size: 20px;
+  font-size: clamp(1rem, 3vw, 1.5rem);
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.4;
   width: 100%;
-  max-width: 760px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    font-size: 18px;
+  @media (max-width: 480px) {
+    font-size: 0.95rem;
   }
 `;
 
@@ -167,19 +164,14 @@ export const ImageGroup = styled.div`
 `;
 
 export const Image = styled.img`
-  display: flex;
-  width: 100px;
-  border-radius: 10px;
-  transition: transform 0.3s; 
-
-  @media (max-width: 768px) {
-    width: 60px;
-    border-radius: 10px;
-  }
-
-  &:hover {
-    transform: rotate(90deg) scale(1.1); 
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  z-index: 0;
 `;
 
 export const SupportText = styled.p`
@@ -236,17 +228,18 @@ export const ImageCaption = styled.p`
 `;
 
 export const ContainerTopo = styled.div`
-  background-color: #333;
-  width: 100%;
+  width: 100vw;
   height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
   box-sizing: border-box;
+  position: relative;
+  padding: 0;
 
   @media (max-width: 768px) {
-    padding: 0 1rem;
+    width: 100vw;
+    padding: 0;
   }
 `;
 
@@ -256,15 +249,29 @@ export const Container2 = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  margin: 0 0 3rem 0;
   box-sizing: border-box;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
 `;
 
 export const ButtonContainer = styled.div`
-    display: flex;
-    gap: 15px; 
-    flex-wrap: wrap; /* Permitir que os botões quebrem para a próxima linha em telas pequenas */
-    justify-content: center; /* Centralizar os botões */
-    flex-direction: column;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: center;
+
+  @media (max-width: 480px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `;
 
 export const TextButton = styled.div`
@@ -330,5 +337,21 @@ export const SectionTitle = styled.h2`
   @media (max-width: 768px) {
     font-size: 28px;
     text-align: center;
+  }
+`;
+
+export const MainText = styled.p`
+  color: #222;
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
   }
 `;

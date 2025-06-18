@@ -42,7 +42,7 @@ export const NavLink = styled.a`
     transition: color 0.2s ease;
     
     &:hover {
-        color: #0088cc;
+        color: #0694A1;
     }
 `;
 
@@ -72,7 +72,7 @@ export const UpperContainer = styled.div`
 `;
 
 export const GreenText = styled.div`
-    background-color: #0088cc;
+    background-color: #0694A1;
     color: black;
     padding: 0.75rem 1.5rem;
     border-radius: 2rem;
@@ -130,12 +130,12 @@ export const EmailInput = styled.input`
     
     &:focus {
         outline: none;
-        border-color: #0088cc;
+        border-color: #0694A1;
     }
 `;
 
 export const SubscribeButton = styled.button`
-    background-color: #0088cc;
+    background-color: #0694A1;
     border-radius: 2rem;
     padding: 1rem 2rem;
     color: black;

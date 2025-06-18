@@ -55,6 +55,62 @@ const Research: React.FC = () => {
                 <ButtonContainer>
                     <Button href="/">Voltar para Home</Button>
                 </ButtonContainer>
+
+                <Bottom>
+                    <SupportText>
+                        Agradecemos o apoio das seguintes agências de fomento e instituições:
+                    </SupportText>
+                    <ImageGroup>
+                        <Image 
+                            src={CNPQ} 
+                            alt="CNPq"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8, delay: 0.4 }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            whileDrag={{ scale: 0.9, rotate: 10 }}
+                            dragSnapToOrigin
+                            drag
+                        />
+                        <Image 
+                            src={Faperj} 
+                            alt="FAPERJ"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8, delay: 0.5 }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            whileDrag={{ scale: 0.9, rotate: 10 }}
+                            dragSnapToOrigin
+                            drag
+                        />
+                        <Image 
+                            src={UFRJ} 
+                            alt="UFRJ"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8, delay: 0.6 }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            whileDrag={{ scale: 0.9, rotate: 10 }}
+                            dragSnapToOrigin
+                            drag
+                        />
+                        <Image 
+                            src={Farmacia} 
+                            alt="Faculdade de Farmácia"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8, delay: 0.7 }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.95 }}
+                            whileDrag={{ scale: 0.9, rotate: 10 }}
+                            dragSnapToOrigin
+                            drag
+                        />
+                    </ImageGroup>
+                </Bottom>
             </Container>
             <Footer />
         </>

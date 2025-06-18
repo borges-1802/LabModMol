@@ -1,21 +1,22 @@
 import { motion } from 'framer-motion';
 import {
-  Image, Text, Introduction, Container, Title, Upper, TextGroup, BlackButton, Pic, StyledLink, ImageGroup, SupportText, Southeast, Southwest, ImageCaption, ContainerTopo, Container2, Image2, Section, SectionContent, SectionImage, SectionTitle, SectionText
+  Image, Text, MainText, Introduction, Container, Title, Upper, TextGroup, BlackButton, Pic, StyledLink, ImageGroup, SupportText, Southeast, Southwest, ImageCaption, ContainerTopo, Container2, Image2, Section, SectionContent, SectionImage, SectionTitle, SectionText
 } from './styles';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import ButtonBlue from '../../components/buttonBlue';
 import { ButtonContainer } from '../Publication/styles';
+import homeImg from '../../assets/home.png';
 
 export default function Home() {
   return (
     <>
       <Header />
-      <Container as={motion.div} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+      <Container>
         {/* Seção 1: Imagem do Laboratório */}
         <Section>
           <ContainerTopo>
-            <ImageCaption>IMAGEM DO LABORATÓRIO/CCS</ImageCaption>
+            <Image src={homeImg} alt="Imagem do laboratório" />
           </ContainerTopo>
         </Section>
 
@@ -23,25 +24,13 @@ export default function Home() {
         <Section>
           <Container2>
             <TextGroup>
-              <Title
-                as={motion.h1}
-                initial={{ opacity: 0, y: -50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-              >
+              <Title>
                 Bem-vindo ao site do Laboratório de Modelagem Molecular QSAR!
               </Title>
             </TextGroup>
-            
-            <Text
-              as={motion.p}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
+            <MainText>
               O Lab ModMolQSAR atua nas áreas (expecificar) e possui o objetivo de (explicar objetivo).
-            </Text>
-
+            </MainText>
             <ButtonContainer>
               <ButtonBlue href="/sobre">Conheça mais sobre o laboratório</ButtonBlue>
             </ButtonContainer>

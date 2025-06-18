@@ -31,9 +31,7 @@ const About: React.FC = () => {
                 <Section>
                     <SectionTitle>O que é o ModMolQSAR</SectionTitle>
                     <SectionContent>
-                        O ModMolQSAR é uma plataforma desenvolvida para auxiliar pesquisadores na área de 
-                        modelagem molecular e QSAR, oferecendo ferramentas e recursos para análise e 
-                        desenvolvimento de modelos preditivos.
+                        O ModMolQSAR é...
                     </SectionContent>
                 </Section>
 
@@ -54,21 +52,21 @@ const About: React.FC = () => {
                 <Section>
                     <SectionTitle>Quais nossos objetivos</SectionTitle>
                     <SectionContent>
-                        • Desenvolver metodologias inovadoras em modelagem molecular
-                        • Contribuir para o avanço científico na área de QSAR
-                        • Formar profissionais qualificados
-                        • Estabelecer parcerias com instituições nacionais e internacionais
+                        <p>• Desenvolver metodologias inovadoras em modelagem molecular</p>
+                        <p>• Contribuir para o avanço científico na área de QSAR</p>
+                        <p>• Formar profissionais qualificados</p>
+                        <p>• Estabelecer parcerias com instituições nacionais e internacionais</p>
                     </SectionContent>
                 </Section>
 
                 <Section>
                     <SectionTitle>Quais as áreas internas</SectionTitle>
                     <SectionContent>
-                        • Modelagem Molecular
-                        • QSAR e QSPR
-                        • Desenvolvimento de Software
-                        • Análise de Dados
-                        • Bioinformática
+                        <p>• Modelagem Molecular</p>
+                        <p>• QSAR e QSPR</p>
+                        <p>• Desenvolvimento de Software</p>
+                        <p>• Análise de Dados</p>
+                        <p>• Bioinformática</p>
                     </SectionContent>
                 </Section>
 
@@ -81,9 +79,6 @@ const About: React.FC = () => {
                     </SectionContent>
                 </Section>
 
-                <ButtonContainer>
-                    <Button href="/">Voltar para Home</Button>
-                </ButtonContainer>
             </Container>
             <Footer />
         </>

@@ -29,7 +29,43 @@ export default function Footer() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <StyledLink to="/Products">
+                    <StyledLink to="/Research">
+                        Pesquisas
+                    </StyledLink>
+                </NavLink>
+                <NavLink
+                    as={motion.a}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <StyledLink to="/Publication">
+                        Publicações
+                    </StyledLink>
+                </NavLink>
+                <NavLink
+                    as={motion.a}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <StyledLink to="/People">
+                        Equipe
+                    </StyledLink>
+                </NavLink>
+                <NavLink
+                    as={motion.a}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <StyledLink to="/Life">
+                        Life of ModMol
+                    </StyledLink>
+                </NavLink>
+                <NavLink
+                    as={motion.a}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <StyledLink to="/Services">
                         Serviços
                     </StyledLink>
                 </NavLink>
@@ -38,26 +74,8 @@ export default function Footer() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <StyledLink to="/UserRules">
-                        Regras de Uso
-                    </StyledLink>
-                </NavLink>
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="https://modmolqsar.weebly.com/">
-                        Blog
-                    </StyledLink>
-                </NavLink>
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="/Contact">
-                        Contato
+                    <StyledLink to="/Database">
+                        Database
                     </StyledLink>
                 </NavLink>
             </Items>
