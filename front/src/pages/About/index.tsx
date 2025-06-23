@@ -19,63 +19,27 @@ const About: React.FC = () => {
                     Sobre nós
                 </Title>
 
-                <Section>
-                    <SectionTitle>História</SectionTitle>
-                    <SectionContent>
-                        O Laboratório de Modelagem Molecular e QSAR foi fundado com o objetivo de 
-                        desenvolver pesquisas inovadoras na área de modelagem molecular e relações quantitativas 
-                        estrutura-atividade.
-                    </SectionContent>
-                </Section>
 
                 <Section>
                     <SectionTitle>O que é o ModMolQSAR</SectionTitle>
                     <SectionContent>
-                        O ModMolQSAR é...
-                    </SectionContent>
-                </Section>
+                       O <b>ModMolQSAR – Laboratório de Modelagem Molecular e QSAR</b> é um laboratório de pesquisa da Faculdade de Farmácia da Universidade Federal do Rio de Janeiro (UFRJ), criado em 2003, com foco no desenvolvimento e aplicação de métodos computacionais nas diferentes etapas do da pesquisa e desenvolvimento (P&D) de candidatos a fármacos — desde a identificação de alvos terapêuticos até a avaliação preditiva exigida por agências reguladoras.
+                       <p>Desde a sua criação, o ModMolQSAR já formou <b>32 mestres e 28 doutores</b>, contribuindo de forma significativa para a capacitação de recursos humanos altamente qualificados nas áreas de Farmácia, Química e Ciências Farmacêuticas. O laboratório também acolhe estudantes de graduação, pós-doutorado e colaboradores em formação contínua.</p>
 
-                <Section>
-                    <SectionTitle>O que é o laboratório</SectionTitle>
-                    <SectionContent>
-                        O Laboratório de Modelagem Molecular e QSAR (ModMolQSAR) está ligado ao Departamento de Fármacos
-                        e Medicamentos da Faculdade de Farmácia, localizada no Centro de Ciências da Saúde (CCS) da Universidade Federal do
-                        Rio de Janeiro (UFRJ). Coordenado pelo Professor Carlos Rangel Rodrigues em colaboração com a Professora Alessandra Mendonça
-                        Teles Souza, o grupo de pesquisa é constituído por pós-doutorandos, alunos de doutorado, mestrado e iniciação científica, todos
-                        com suporte financeiro proveniente de instituições como Capes, CNPq e FAPERJ.
-                        Nosso laboratório é um centro de excelência em pesquisa, dedicado ao desenvolvimento 
-                        de metodologias computacionais e experimentais para o estudo de interações moleculares 
-                        e propriedades físico-químicas.
-                    </SectionContent>
-                </Section>
-
-                <Section>
-                    <SectionTitle>Quais nossos objetivos</SectionTitle>
-                    <SectionContent>
-                        <p>• Desenvolver metodologias inovadoras em modelagem molecular</p>
-                        <p>• Contribuir para o avanço científico na área de QSAR</p>
-                        <p>• Formar profissionais qualificados</p>
-                        <p>• Estabelecer parcerias com instituições nacionais e internacionais</p>
                     </SectionContent>
                 </Section>
 
                 <Section>
                     <SectionTitle>Quais as áreas internas</SectionTitle>
                     <SectionContent>
-                        <p>• Modelagem Molecular</p>
-                        <p>• QSAR e QSPR</p>
-                        <p>• Desenvolvimento de Software</p>
-                        <p>• Análise de Dados</p>
-                        <p>• Bioinformática</p>
+                        Com ênfase em diferentes técnicas de modelagem molecular - como <b>quimioinformática , modelos QSAR (Quantitative Structure–Activity Relationship), docking e dinâmica molecular</b>, o laboratório atua em projetos multi e transdisciplinares voltados à descoberta e otimização de fármacos, reposicionamento de fármacos e viabilizando o uso de inteligência artificial no âmbito regulatório de medicamentos, cosméticos, agroquímicos e outros produtos sujeitos a controle sanitário.
                     </SectionContent>
                 </Section>
 
                 <Section>
-                    <SectionTitle>Quem somos nós</SectionTitle>
+                    <SectionTitle>Quais nossos objetivos</SectionTitle>
                     <SectionContent>
-                        Somos uma equipe multidisciplinar composta por pesquisadores, professores e estudantes 
-                        dedicados ao avanço da ciência através da modelagem molecular e QSAR. Nossa equipe 
-                        combina expertise em química, biologia, computação e estatística.
+                        Nosso compromisso é produzir ciência de excelência, contribuir para o avanço do conhecimento e promover a inovação em saúde por meio de abordagens sustentáveis e eticamente responsáveis.
                     </SectionContent>
                 </Section>
 

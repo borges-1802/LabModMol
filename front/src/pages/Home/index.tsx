@@ -32,7 +32,7 @@ export default function Home() {
               O Lab ModMolQSAR atua nas áreas (expecificar) e possui o objetivo de (explicar objetivo).
             </MainText>
             <ButtonContainer>
-              <ButtonBlue href="/sobre">Conheça mais sobre o laboratório</ButtonBlue>
+              <ButtonBlue href="/about">Conheça mais sobre o laboratório</ButtonBlue>
             </ButtonContainer>
           </Container2>
         </Section>

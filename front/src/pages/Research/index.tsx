@@ -28,38 +28,42 @@ const Research: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    Temos a atuação em algumas frentes de pesquisa:
+                    Apresentamos as frentes de pesquisa do ModMolQSAR:
                 </Description>
 
                 <Section>
-                    <SectionTitle>Nome 1</SectionTitle>
+                    <SectionTitle>Toxicologia computacional</SectionTitle>
                     <SectionContent>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p>- Desenvolvimento de modelos QSAR para avaliação de risco de substâncias bioativas;</p>
+                        <p>- Avaliação de risco humano e ambiental e substâncias sujeitas a avaliação regulatória;</p>
+                        <p>- Avaliação de risco de Produtos de Degradação (PDs) de IFAs conforme guias internacionais.</p>
+
                     </SectionContent>
                 </Section>
 
                 <Section>
-                    <SectionTitle>Nome 2</SectionTitle>
+                    <SectionTitle>Farmacocinética computacional</SectionTitle>
                     <SectionContent>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p>- Avaliação de biodisponibilidade oral;</p>
+                        <p>- Investigação das reações metabólicas;</p>
+                        <p>- Modelagem PBPK e simulação: E marcos clínicos virtuais e desenvolvimento de formações.</p>
+
                     </SectionContent>
                 </Section>
 
                 <Section>
-                    <SectionTitle>Nome 3</SectionTitle>
+                    <SectionTitle>Desenvolvimento de fármacos</SectionTitle>
                     <SectionContent>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <p>- Modelagem e Simulação de sistemas biológicos por docking e dinâmica molecular;</p>
+                        <p>- Busca por novos alvos terapêuticos.</p>
+
                     </SectionContent>
                 </Section>
-
-                <ButtonContainer>
-                    <Button href="/">Voltar para Home</Button>
-                </ButtonContainer>
 
                 <Bottom>
-                    <SupportText>
-                        Agradecemos o apoio das seguintes agências de fomento e instituições:
-                    </SupportText>
+                    <Description>
+                    Agradecemos o apoio das seguintes agências de fomento e instituições:
+                </Description>
                     <ImageGroup>
                         <Image 
                             src={CNPQ} 

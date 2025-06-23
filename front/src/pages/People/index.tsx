@@ -21,7 +21,7 @@ import beatriz from '../../assets/people/fotoBeatriz.jpeg';
 import eduardo from '../../assets/people/eduardo.png';
 import joaop from '../../assets/people/joaopedro.png';
 //import joaov from '../../assets/people/fotoJoaoVictor.jpeg';
-//import juliana from '../../assets/people/juliana.png';
+import juliana from '../../assets/people/juliana.jpg';
 import mariana  from '../../assets/people/fotoMariana.jpeg';
 import paulo from '../../assets/people/fotoPaulo.jpeg';
 
@@ -35,7 +35,7 @@ const People: React.FC = () => {
         photo: generic,
         description: "Professor e coordenador do Laboratório de Modelagem Molecular e QSAR. Especialista em modelagem molecular, QSAR e desenvolvimento de fármacos.",
         lattes: "http://lattes.cnpq.br/4265523459861860",
-        linkedin: "https://linkedin.com/in/",
+        linkedin: false,
         email: "email@example.com"
       },
       {
@@ -45,8 +45,8 @@ const People: React.FC = () => {
         photo: alessandra,
         description: "Professora e vice-coordenadora do Laboratório. Especialista em modelagem molecular e desenvolvimento de fármacos.",
         lattes: "http://lattes.cnpq.br/7047409069633400",
-        linkedin: "https://linkedin.com/in/",
-        email: "email@example.com"
+        linkedin: "https://www.linkedin.com/in/alessandra-de-souza-374a1823/",
+        email: "amtsouza@gmail.com"
       },
       {
         id: 3,
@@ -54,8 +54,8 @@ const People: React.FC = () => {
         role: "Professora Colaboradora",
         photo: ana,
         description: "Professora do Laboratório. Especialista em modelagem molecular e desenvolvimento de fármacos.",
-        lattes: "http://lattes.cnpq.br/",
-        linkedin: "https://linkedin.com/in/",
+        lattes: "http://lattes.cnpq.br/2594571837199451",
+        linkedin: "https://www.linkedin.com/in/ana-carolina-sodero-9877743a/",
         email: "email@example.com"
       },
       {
@@ -64,7 +64,7 @@ const People: React.FC = () => {
         role: "Professora Colaboradora",
         photo: barbara,
         description: "Professora do Laboratório. Especialista em modelagem molecular e desenvolvimento de fármacos.",
-        lattes: "http://lattes.cnpq.br/",
+        lattes: "http://lattes.cnpq.br/5694594751124057",
         linkedin: "https://linkedin.com/in/",
         email: "email@example.com"
       }
@@ -200,8 +200,8 @@ const People: React.FC = () => {
         id: 17,
         name: "Juliana Lima",
         role: "Aluna de Iniciação Científica",
-        photo: generic,
-        description: "Adicionar Resumo.",
+        photo: juliana,
+        description: "(editar)Graduanda em Farmácia pela UFRJ e possuo formação técnica em Química Industrial pelo IFRJ. Atualmente, sou aluna de Iniciação Científica no Laboratório de Modelagem Molecular e QSAR (ModMolQSAR), onde participo de um projeto voltado para o estudo da Signal Peptidase I de Leishmania como alvo farmacológico no tratamento da Leishmaniose. Além disso, busco uma oportunidade de estágio na indústria farmacêutica, com foco no setor de qualidade, a fim de aplicar e aprimorar meus conhecimentos na área.",
         lattes: "http://lattes.cnpq.br/7233468074161327",
         linkedin: "https://www.linkedin.com/in/juliana-lima-bb2593244",
         email: "ljulianinha9@gmail.com "
