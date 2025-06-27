@@ -201,7 +201,7 @@ const People: React.FC = () => {
         name: "Juliana Lima",
         role: "Aluna de Iniciação Científica",
         photo: juliana,
-        description: "(editar)Graduanda em Farmácia pela UFRJ e possuo formação técnica em Química Industrial pelo IFRJ. Atualmente, sou aluna de Iniciação Científica no Laboratório de Modelagem Molecular e QSAR (ModMolQSAR), onde participo de um projeto voltado para o estudo da Signal Peptidase I de Leishmania como alvo farmacológico no tratamento da Leishmaniose. Além disso, busco uma oportunidade de estágio na indústria farmacêutica, com foco no setor de qualidade, a fim de aplicar e aprimorar meus conhecimentos na área.",
+        description: "Graduanda em Farmácia pela UFRJ e possui formação técnica em Química Industrial pelo IFRJ. Atualmente é aluna de Iniciação Científica no Laboratório de Modelagem Molecular e QSAR, onde participa de um projeto voltado para o estudo da Signal Peptidase I de Leishmania como alvo farmacológico no tratamento da Leishmaniose. Além disso, busca uma oportunidade de estágio na indústria farmacêutica, com foco no setor de qualidade, a fim de aplicar e aprimorar meus conhecimentos na área.",
         lattes: "http://lattes.cnpq.br/7233468074161327",
         linkedin: "https://www.linkedin.com/in/juliana-lima-bb2593244",
         email: "ljulianinha9@gmail.com "
