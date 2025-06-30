@@ -4,7 +4,7 @@ import { Container, Title, Form, Input, TextArea, Button, Message } from './styl
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 
-const Database: React.FC = () => {
+const Contact: React.FC = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -96,4 +96,4 @@ const Database: React.FC = () => {
     );
 };
 
-export default Database;
+export default Contact;

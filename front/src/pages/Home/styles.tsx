@@ -266,7 +266,15 @@ export const ButtonContainer = styled.div`
   flex-direction: column;
   padding-left: 0;
   padding-right: 0;
-  align-items: center;
+  align-items: flex-start;
+
+  button, a {
+    font-size: 0.95rem !important;
+    padding: 8px 18px !important;
+    border-radius: 8px !important;
+    min-width: unset !important;
+    box-shadow: none !important;
+  }
 
   @media (max-width: 480px) {
     padding-left: 0;
@@ -289,6 +297,7 @@ export const SectionContent = styled.div<{ reverse?: boolean }>`
   padding: 2rem;
   margin: 0;
   box-sizing: border-box;
+  background: #D9D9D9;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -354,4 +363,67 @@ export const MainText = styled.p`
   @media (max-width: 480px) {
     font-size: 1rem;
   }
+`;
+
+export const LocationContent = styled(SectionContent)`
+  align-items: stretch;
+  background: #0694A1;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+`;
+
+export const LocationInfo = styled(SectionText)`
+  max-width: 45%;
+  min-width: 250px;
+  justify-content: center;
+  color: #fff;
+  padding: 0 3rem 0 3.5rem;
+  text-align: left;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    min-width: unset;
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+  }
+`;
+
+export const LocationMap = styled(SectionImage)`
+  max-width: 55%;
+  min-width: 250px;
+  min-height: 300px;
+  padding: 0;
+  background: none;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    min-width: unset;
+    min-height: 200px;
+    padding: 0;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border: 0;
+    border-radius: 8px;
+    @media (max-width: 768px) {
+      min-height: 200px;
+    }
+  }
+`;
+
+export const LocationTitle = styled(SectionTitle)`
+  margin-bottom: 0.5rem;
+`;
+
+export const PublicacoesTitle = styled(SectionTitle)`
+  text-align: right;
+`;
+
+export const PublicacoesText = styled(Text)`
+  text-align: right;
 `;

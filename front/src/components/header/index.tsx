@@ -90,9 +90,19 @@ export default function Header() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <StyledLink to="/Database">
-                        Database
+                    <StyledLink to="/Contact">
+                        Contato
                     </StyledLink>
+                </NavLink>
+
+                <NavLink
+                    as={motion.a}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <a href="https://enderecodosite.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        Database
+                    </a>
                 </NavLink>
             </Nav>
         </HeaderContainer>

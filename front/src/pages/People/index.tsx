@@ -31,9 +31,9 @@ const People: React.FC = () => {
       {
         id: 1,
         name: "Carlos Rangel Rodrigues",
-        role: "Coordenador",
+        role: "Professor Titular",
         photo: generic,
-        description: "Professor e coordenador do Laboratório de Modelagem Molecular e QSAR. Especialista em modelagem molecular, QSAR e desenvolvimento de fármacos.",
+        description: "Professor e coordenador do Laboratório de Modelagem Molecular e QSAR. Possui graduação em Farmácia pela UFRJ, mestrado e doutorado em Química Orgânica pela UFRJ. Atualmente é Professor Titular em Química Medicinal da Faculdade de Farmácia da UFRJ. Exerceu o cargo de Pró-reitor de Planejamento, Desenvolvimento e Finanças no período de 2011-2015. Atualmente é Diretor da Faculdade Farmácia da UFRJ (2022-2026). Tem experiência na área de Química e Ciências Farmacêuticas, com ênfase em Modelagem Molecular e QSAR, inteligência artificial e análise ADMET in silico, atuando principalmente no planejamento de novos candidatos a fármacos para tratamento de doenças negligenciadas. ",
         lattes: "http://lattes.cnpq.br/4265523459861860",
         linkedin: false,
         email: "email@example.com"
@@ -41,9 +41,9 @@ const People: React.FC = () => {
       {
         id: 2,
         name: "Alessandra Mendonça Teles de Souza",
-        role: "Vice-Coordenadora",
+        role: "Professora Associada 2",
         photo: alessandra,
-        description: "Professora e vice-coordenadora do Laboratório. Especialista em modelagem molecular e desenvolvimento de fármacos.",
+        description: "Professora Associada do Departamento de Fármacos e Medicamentos da Faculdade de Farmácia e vice-coordenadora do Laboratório. Orientadora de mestrado e doutorado no Programa de Pós Graduação em Ciências Farmacêuticas (PPGCF-UFRJ) (nível 5 CAPES). Farmacêutica industrial, Mestre em Química Orgânica e Doutora em Química pela UFF com período no Institut Pasteur de Paris. Integrante do Conselho Diretor do 'Clubes de Ciência Brasil' desde 2018. É Cientista do Nosso Estado (FAPERJ, 2024 - atual) e desenvolve projetos de pesquisa na área de Química Medicinal, planejamento de candidatos a fármacos para doenças infecciosas e neurodegenerativas, modelos farmacocinéticos in silico, avaliação toxicológica in silico de substâncias para saúde humana e ambiental, aprendizado de máquinas, SAR/QSAR e docking molecular.",
         lattes: "http://lattes.cnpq.br/7047409069633400",
         linkedin: "https://www.linkedin.com/in/alessandra-de-souza-374a1823/",
         email: "amtsouza@gmail.com"
@@ -51,9 +51,9 @@ const People: React.FC = () => {
       {
         id: 3,
         name: "Ana Carolina Rennó Sodero",
-        role: "Professora Colaboradora",
+        role: "Professora Associada ",
         photo: ana,
-        description: "Professora do Laboratório. Especialista em modelagem molecular e desenvolvimento de fármacos.",
+        description: "Farmacêutica com habilitação em indústria pela UFF, com mestrado em Ciências pelo Departamento de Química Orgânica da UFRJ e doutorado em Biologia Celular e Molecular pela FIOCRUZ. Realizou dois pós-doutorados: o primeiro no Programa de Pós-Graduação em Ciências Farmacêuticas da UFRJ e o segundo na Equipe de Físico-Química da Université de Pau et des Pays de l'Adour, na França. Atualmente é Professora Associada, com foco em planejamento de fármacos e em estratégias educacionais no ensino superior. Desde 2024, integra a coordenação do Curso de Farmácia Integral da UFRJ.",
         lattes: "http://lattes.cnpq.br/2594571837199451",
         linkedin: "https://www.linkedin.com/in/ana-carolina-sodero-9877743a/",
         email: "email@example.com"
@@ -61,9 +61,9 @@ const People: React.FC = () => {
       {
         id: 4,
         name: "Bárbara de Azevedo Abrahim Vieira",
-        role: "Professora Colaboradora",
+        role: "Professora Adjunta",
         photo: barbara,
-        description: "Professora do Laboratório. Especialista em modelagem molecular e desenvolvimento de fármacos.",
+        description: "Profesora Adjunta na URFJ. Realizou missão científica no Computational Robotics AI na Rice University - Houston-EUA, pós-doutorado em Métodos Computacionais em Toxicidade (2014-2015) - UFRJ, doutora em Ciências Farmacêuticas - UFRJ e Universidade de Coimbra-Portugal (doutorado-sandwich - PDSE/CAPES) (2011-2013), mestre em Ciências Aplicadas a Produtos para a Saúde - UFF (2009-2011), graduada em Farmácia Industrial - UFF. Credenciada nos programas de Pós-Graduação em Ciências Farmacêuticas (PPGCF-FF/UFRJ) e Biologia Molecular e Celular (PPGBMC-UNIRIO). No Laboratório de Modelagem Molecular QSAR (ModMolQSAR) coordena projetos com planejamento de candidatos à fármaco, desenvolvimento de novas formulações, avaliação da farmacocinética e toxicidade (ADMET) de fármacos e cosméticos, simulação farmacocinética baseada na fisiologia (PBPK) e avaliação de risco de produtos de degradação (PDs) conforme guias de harmonização internacional (ICH) e OECD.",
         lattes: "http://lattes.cnpq.br/5694594751124057",
         linkedin: "https://linkedin.com/in/",
         email: "email@example.com"

@@ -74,9 +74,18 @@ export default function Footer() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <StyledLink to="/Database">
-                        Database
+                    <StyledLink to="/Contato">
+                        Contato
                     </StyledLink>
+                </NavLink>
+                <NavLink
+                    as={motion.a}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    <a href="https://enderecodosite.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        Database
+                    </a>
                 </NavLink>
             </Items>
 

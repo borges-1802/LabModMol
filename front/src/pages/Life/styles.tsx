@@ -1,27 +1,30 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
 export const Container = styled.div`
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Usar min-height para garantir que o conteúdo não fique cortado */
+    padding: 20px; /* Aumentar o padding para melhorar a responsividade */
+    box-sizing: border-box;
+    background-color: rgba(238, 238, 238, 0.11);
 `;
 
 export const Title = styled.h1`
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
+    font-size: 2em; // Tamanho reduzido para telas menores
+    color: #191A23; 
+    margin-bottom: 15px;
+    text-align: center; 
 `;
 
 export const Description = styled.p`
-    font-size: 1.2rem;
+    font-size: 1em; // Tamanho reduzido para telas menores
     color: #666;
+    margin-bottom: 30px; 
     text-align: center;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 500px; 
+    padding: 0 20px;
 `;
 
 export const EventCard = styled.div`
