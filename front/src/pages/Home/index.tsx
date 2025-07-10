@@ -7,6 +7,7 @@ import Footer from '../../components/footer';
 import ButtonBlue from '../../components/buttonBlue';
 import { ButtonContainer } from '../Publication/styles';
 import homeImg from '../../assets/fotoHome2.png';
+import homePesquisa from '../../assets/fotoPesquisa.jpg';
 
 export default function Home() {
   return (
@@ -50,8 +51,7 @@ export default function Home() {
               </ButtonContainer>
             </SectionText>
             <SectionImage>
-              {/* Imagem a ser definida */}
-              <ImageCaption>IMAGEM ÁREAS DE PESQUISA</ImageCaption>
+              <Image src={homePesquisa} alt="Pesquisas do laboratório" />
             </SectionImage>
           </SectionContent>
         </Section>

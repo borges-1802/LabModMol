@@ -138,3 +138,16 @@ export const Image = styled.img`
     transform: rotate(90deg) scale(1.1); 
   }
 `;
+
+export const PublicationTitleLink = styled.a`
+    color: #0694A1;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.08rem;
+    transition: color 0.2s;
+    word-break: break-word;
+    &:hover {
+        color: #04707a;
+        text-decoration: underline;
+    }
+`;

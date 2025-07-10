@@ -20,7 +20,7 @@ import julia from '../../assets/people/julia.png';
 import beatriz from '../../assets/people/fotoBeatriz.jpeg';
 import eduardo from '../../assets/people/eduardo.png';
 import joaop from '../../assets/people/joaopedro.png';
-//import joaov from '../../assets/people/fotoJoaoVictor.jpeg';
+import borges from '../../assets/people/borges.jpg';
 import juliana from '../../assets/people/juliana.jpg';
 import mariana  from '../../assets/people/fotoMariana.jpeg';
 import paulo from '../../assets/people/fotoPaulo.jpeg';
@@ -104,7 +104,7 @@ const People: React.FC = () => {
       },
       {
         id: 8,
-        name: "Roger",
+        name: "Roger Borges",
         role: "Doutorando",
         photo: generic,
         description: "Possui graduação em Farmácia pela Universidade Federal do Rio de Janeiro (UFRJ) e mestrado pelo Programa de Pós-graduação em Ciências Farmacêuticas da UFRJ. Tem experiência nas áreas de biologia molecular, bioquímica, biofísica, química medicinal e modelagem molecular, utilizando técnicas espectroscópicas, calorimétricas, dinâmica molecular e de docking molecular para compreender sistemas biológicos, com aplicação no auxílio na otimização de fármacos por meio de análises termodinâmicas e estruturais.",
@@ -190,8 +190,8 @@ const People: React.FC = () => {
         id: 16,
         name: "João Victor Borges",
         role: "Aluno de Iniciação Científica",
-        photo: generic,
-        description: "Graduando em Ciência da Computação.",
+        photo: borges,
+        description: "Graduando em Ciência da Computação pela UFRJ. Atualmente atua como bolsista de Iniciação Científica no Laboratório de Modelagem Molecular QSAR, sendo o principal responsável pelo desenvolvimento do site do laboratório e pela atualização do banco de dados e modelos preditivos para Doenças Tropicais Negligenciadas. Possui experiência prévia nas áreas de: UX/UI Design e Desenvolvimento Front-End na Empresa Júnior de Consultoria e Microinformática.Seus principais interesses são na área de Desenvolvimento, Dados, Design e Segurança.",
         lattes: "http://lattes.cnpq.br/1656015756108559",
         linkedin: "https://br.linkedin.com/in/jo%C3%A3o-victor-borges-453020272",
         email: "joaovbn@dcc.ufrj.br"
