@@ -3,24 +3,26 @@ import styled from 'styled-components';
 export const CardContainer = styled.div`
     background: #FFFFFF;
     border-radius: 8px;
-    padding: 32px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 28px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
     width: 100%;
     display: flex;
     flex-direction: column;
     transition: transform 0.2s;
     border: 1px solid #e5e7eb;
+    margin-bottom: 6px;
+    gap: 8px;
 
     &:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.09);
     }
 `;
 
 export const CardTitle = styled.h3`
-    font-size: 1.4rem;
+    font-size: 1.15rem;
     color: #333;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     font-weight: 600;
 `;
 

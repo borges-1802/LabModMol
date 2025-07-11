@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
         // Construct the mailto link
         const subject = encodeURIComponent("Contact Form Submission");
         const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
-        const mailtoLink = `mailto:fa017066@gmail.com?subject=${subject}&body=${body}`;
+        const mailtoLink = `mailto:modmolqsar@gmail.com?subject=${subject}&body=${body}`;
 
         // Open the default email client
         window.location.href = mailtoLink;

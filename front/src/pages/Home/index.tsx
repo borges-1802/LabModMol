@@ -6,8 +6,9 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 import ButtonBlue from '../../components/buttonBlue';
 import { ButtonContainer } from '../Publication/styles';
-import homeImg from '../../assets/fotoHome2.png';
-import homePesquisa from '../../assets/fotoPesquisa.jpg';
+import homeImg from '../../assets/fotoHome.png';
+import homePesquisa from '../../assets/fotoPesquisa.png';
+import homePublicacoes from '../../assets/fotoPubli.jpg';
 
 export default function Home() {
   return (
@@ -61,8 +62,7 @@ export default function Home() {
         <Section>
           <SectionContent>
             <SectionImage>
-              {/* Imagem a ser definida */}
-              <ImageCaption>IMAGEM SECUNDÁRIA</ImageCaption>
+              <Image src={homePublicacoes} alt="Pesquisas do laboratório" />
             </SectionImage>
             <SectionText>
               <PublicacoesTitle>Publicações</PublicacoesTitle>
