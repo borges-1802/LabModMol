@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Button from '../../components/button';
-import { Container, Title, ButtonContainer, Bottom, Image, ImageGroup, SupportText, Section, SectionTitle, SectionContent } from './styles.tsx';
+import { Container, Title, Section, SectionTitle, SectionContent } from './styles.tsx';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 

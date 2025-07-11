@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Button from '../../components/button';
-import { Container, Title, Description, ButtonContainer, Bottom, Image, ImageGroup, SupportText, Section, SectionTitle, SectionContent } from './styles';
+import { Container, Title, Description, Bottom, Image, ImageGroup, Section, SectionTitle, SectionContent } from './styles';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import Farmacia from '../../assets/farmacia_logo.png';

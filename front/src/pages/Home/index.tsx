@@ -1,6 +1,5 @@
-import { motion } from 'framer-motion';
 import {
-  Image, Text, MainText, Introduction, Container, Title, Upper, TextGroup, BlackButton, Pic, StyledLink, ImageGroup, SupportText, Southeast, Southwest, ImageCaption, ContainerTopo, Container2, Image2, Section, SectionContent, SectionImage, SectionTitle, SectionText, LocationContent, LocationInfo, LocationMap, LocationTitle, PublicacoesTitle, PublicacoesText
+  Image, Text, MainText, Container, Title, TextGroup, ContainerTopo, Container2, Section, SectionContent, SectionImage, SectionTitle, SectionText, LocationContent, LocationInfo, LocationMap, LocationTitle, PublicacoesTitle, PublicacoesText
 } from './styles';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
@@ -34,7 +33,7 @@ export default function Home() {
               Conheça um pouco mais sobre o nosso laboratório!
             </MainText>
             <ButtonContainer>
-              <ButtonBlue href="/about">Clique e confira um pouco sobre nós</ButtonBlue>
+              <ButtonBlue href="/About">Clique e confira um pouco sobre nós</ButtonBlue>
             </ButtonContainer>
           </Container2>
         </Section>

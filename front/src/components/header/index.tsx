@@ -100,9 +100,9 @@ export default function Header() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <a href="https://enderecodosite.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <StyledLink to="/Services">
                         Database
-                    </a>
+                    </StyledLink>
                 </NavLink>
             </Nav>
         </HeaderContainer>

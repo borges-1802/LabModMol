@@ -1,4 +1,4 @@
-import { EmailContainer, EmailInput, SubscribeButton, Items, NavLink, Text, FooterContainer, FooterText, BottonContainer, UpperContainer, GreenText, Container, StyledLink } from './styles';
+import { Items, NavLink, Text, FooterContainer, FooterText, UpperContainer, GreenText, Container, StyledLink } from './styles';
 import { motion } from 'framer-motion';
 
 export default function Footer() {
@@ -74,7 +74,7 @@ export default function Footer() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <StyledLink to="/Contato">
+                    <StyledLink to="/Contact">
                         Contato
                     </StyledLink>
                 </NavLink>
@@ -83,9 +83,9 @@ export default function Footer() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <a href="https://enderecodosite.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <StyledLink to="/Services">
                         Database
-                    </a>
+                    </StyledLink>
                 </NavLink>
             </Items>
 
@@ -112,21 +112,6 @@ export default function Footer() {
 
                 </Text>
 
-                <EmailContainer
-                    as={motion.div}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 1.5, duration: 0.5 }}
-                >
-                    <EmailInput placeholder="Digite seu email" />
-                    <SubscribeButton
-                        as={motion.button}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        Se inscreva em nosso Newsletter
-                    </SubscribeButton>
-                </EmailContainer>
             </Container>
         </FooterContainer>
     );
