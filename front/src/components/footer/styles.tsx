@@ -28,7 +28,7 @@ export const Items = styled.nav`
     gap: 2.5rem;
     margin-bottom: 3rem;
     
-    @media (max-width: 768px) {
+    @media (max-width: 890px) {
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;

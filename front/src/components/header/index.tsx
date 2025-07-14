@@ -1,8 +1,22 @@
-import { HeaderContainer, Logo, Nav, NavLink, StyledLink } from './styles';
+import { HeaderContainer, Logo, Nav, NavLink, StyledLink, HamburgerButton, MobileNav, Overlay } from './styles';
 import LogoHeader from '../../assets/logo2.png';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const handleClose = () => setMenuOpen(false);
+    const navLinks = [
+        { to: '/About', label: 'Sobre nós' },
+        { to: '/Research', label: 'Pesquisa' },
+        { to: '/Publication', label: 'Publicações' },
+        { to: '/People', label: 'Equipe' },
+        { to: '/Life', label: 'Life of ModMol' },
+        { to: '/Services', label: 'Serviços' },
+        { to: '/Contact', label: 'Contato' },
+        { to: '/Services', label: 'Database' },
+    ];
     return (
         <HeaderContainer
             as={motion.header}
@@ -19,92 +33,40 @@ export default function Header() {
                     transition={{ delay: 0.5, duration: 0.5 }}
                 />
             </StyledLink>
+            <HamburgerButton aria-label="Abrir menu" onClick={() => setMenuOpen(o => !o)}>
+                {menuOpen ? <FaTimes size={28} color="#fff" /> : <FaBars size={28} color="#fff" />}
+            </HamburgerButton>
             <Nav
                 as={motion.nav}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
             >
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="/About">
-                        Sobre nós
-                    </StyledLink>
-                </NavLink>
-                
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="/Research">
-                        Pesquisa
-                    </StyledLink>
-                </NavLink>
-
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="/Publication">
-                        Publicações
-                    </StyledLink>
-                </NavLink>
-                
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="/People">
-                        Equipe
-                    </StyledLink>
-                </NavLink>
-
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="/Life">
-                        Life of ModMol
-                    </StyledLink>
-                </NavLink>
-
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="/Services">
-                        Serviços
-                    </StyledLink>
-                </NavLink>
-                
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="/Contact">
-                        Contato
-                    </StyledLink>
-                </NavLink>
-
-                <NavLink
-                    as={motion.a}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    <StyledLink to="/Services">
-                        Database
-                    </StyledLink>
-                </NavLink>
+                {navLinks.map(link => (
+                    <NavLink
+                        as={motion.a}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        key={link.to + '-desktop'}
+                    >
+                        <StyledLink to={link.to}>{link.label}</StyledLink>
+                    </NavLink>
+                ))}
             </Nav>
+            <Overlay open={menuOpen} onClick={handleClose} />
+            <MobileNav open={menuOpen}>
+                {navLinks.map(link => (
+                    <NavLink
+                        as={motion.a}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        key={link.to + '-mobile'}
+                        onClick={handleClose}
+                    >
+                        <StyledLink to={link.to}>{link.label}</StyledLink>
+                    </NavLink>
+                ))}
+            </MobileNav>
         </HeaderContainer>
     );
 };

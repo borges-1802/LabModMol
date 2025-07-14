@@ -4,6 +4,12 @@ export const Container = styled.div`
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    @media (max-width: 768px) {
+        padding: 20px 12px;
+    }
 `;
 
 export const Title = styled.h1`
@@ -12,6 +18,10 @@ export const Title = styled.h1`
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 768px) {
+        font-size: 1.7rem;
+    }
 `;
 
 export const Section = styled.div`
@@ -25,6 +35,11 @@ export const Section = styled.div`
 
     &:hover {
         transform: translateY(-4px);
+    }
+
+    @media (max-width: 768px) {
+        padding: 12px 5px;
+        margin-bottom: 16px;
     }
 `;
 
@@ -43,6 +58,14 @@ export const SectionTitle = styled.h2`
         height: 3px;
         background: #0694A1;
         margin-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+        &::after {
+            margin-left: 8px;
+        }
     }
 `;
 
@@ -67,6 +90,10 @@ export const SectionContent = styled.div`
             position: absolute;
             left: 0;
         }
+    }
+
+    @media (max-width: 768px) {
+        font-size: 0.98rem;
     }
 `;
 

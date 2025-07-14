@@ -298,7 +298,8 @@ export const SectionContent = styled.div<{ reverse?: boolean }>`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
+    gap: 1.2rem;
   }
 `;
 
@@ -311,6 +312,12 @@ export const SectionText = styled.div`
   width: 100%;
   max-width: 50%;
   box-sizing: border-box;
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 0.5rem;
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const SectionImage = styled.div`
@@ -330,6 +337,11 @@ export const SectionImage = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    min-height: 180px;
+    border-radius: 8px;
   }
 `;
 
@@ -368,10 +380,14 @@ export const LocationContent = styled(SectionContent)`
   padding: 2rem 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    border-radius: 0 0 16px 16px;
+  }
 `;
 
 export const LocationInfo = styled(SectionText)`
@@ -384,8 +400,10 @@ export const LocationInfo = styled(SectionText)`
   @media (max-width: 768px) {
     max-width: 100%;
     min-width: unset;
-    padding: 0 1.5rem;
+    padding: 0 0.5rem;
     margin-bottom: 1rem;
+    text-align: center;
+    align-items: center;
   }
 `;
 
@@ -398,18 +416,15 @@ export const LocationMap = styled(SectionImage)`
   @media (max-width: 768px) {
     max-width: 100%;
     min-width: unset;
-    min-height: 200px;
+    min-height: 180px;
     padding: 0;
   }
   iframe {
     width: 100%;
     height: 100%;
-    min-height: 300px;
+    min-height: 180px;
     border: 0;
     border-radius: 8px;
-    @media (max-width: 768px) {
-      min-height: 200px;
-    }
   }
 `;
 
@@ -419,8 +434,14 @@ export const LocationTitle = styled(SectionTitle)`
 
 export const PublicacoesTitle = styled(SectionTitle)`
   text-align: right;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
 export const PublicacoesText = styled(Text)`
   text-align: right;
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;

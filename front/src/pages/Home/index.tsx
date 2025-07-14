@@ -69,7 +69,7 @@ export default function Home() {
                 O Laboratório ModMolQSAR desenvolve pesquisas científicas inovadoras. Nossas publicações refletem o compromisso com a excelência acadêmica e a contribuição para o avanço do conhecimento científico. Confira nossas publicações para saber mais sobre os resultados e impactos dos nossos estudos.
               </PublicacoesText>
               <ButtonContainer>
-                <ButtonBlue href="/secao">Saiba mais</ButtonBlue>
+                <ButtonBlue href="/Publication">Saiba mais</ButtonBlue>
               </ButtonContainer>
             </SectionText>
           </SectionContent>

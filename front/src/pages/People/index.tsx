@@ -87,7 +87,7 @@ const People: React.FC = () => {
         name: "Alberto Lyra",
         role: "Doutorando",
         photo: alberto,
-        description: "Mestrando em Ciências Farmacêuticas (UFRJ), bolsista Capes. Farmacêutico (UFRJ, 2024). Pesquisador no grupo ModMolQSAR, atuando em QSAR. Realizou ICs em ecotoxicologia computacional (FAPERJ) e fitoquímica (PIBIC). Monitor de Química Farmacêutica Medicinal (2023). Técnico em Química (ETRR, 2017).",
+        description: "Doutourando em Ciências Farmacêuticas (UFRJ), bolsista FAPERJ. Farmacêutico (UFRJ, 2024). Pesquisador no grupo ModMolQSAR, atuando em QSAR. Realizou ICs em ecotoxicologia computacional (FAPERJ) e fitoquímica (PIBIC). Monitor de Química Farmacêutica Medicinal (2023). Técnico em Química (ETRR, 2017).",
         lattes: "http://lattes.cnpq.br/2185019515205927",
         linkedin: "",
         email: "betotl@ufrj.br"
